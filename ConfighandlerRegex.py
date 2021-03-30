@@ -51,8 +51,6 @@ def classify_settings(filename):
 
     #//return lists
     return seton, setoff, setdefault
-    pass
-
 
 #function-2
 def print_settings(setonlist, setofflist, setdefaultlist):
@@ -63,15 +61,17 @@ def print_settings(setonlist, setofflist, setdefaultlist):
     ndef = len(setdefaultlist)
 
     print("1) Set On keywords:")
-    for i in range(0, non + 1):
-        print("{i}) {}", i, setonlist[i])
+    for i in range(0, non):
+        print("    ", i, ")", setonlist[i])
 
     print("2) Set Off keywords:")
-    for i in range(0, noff + 1):
-        print("{i}) {}", i, setofflist[i])
+    for i in range(0, noff):
+        print("    ", i, ")", setofflist[i])
+#        print("{i}) {}", i, setofflist[i])
 
-
-#    pass
+    print("3) Set Default keywords:")
+    for i in range(0, ndef):
+        print("    ", i, ")", setdefaultlist[i])
 
 #Main program, do not modify it.
 if __name__ == "__main__":
