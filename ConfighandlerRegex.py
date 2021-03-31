@@ -62,16 +62,16 @@ def print_settings(setonlist, setofflist, setdefaultlist):
 
     print("1) Set On keywords:")
     for i in range(0, non):
-        print("    ", i, ")", setonlist[i])
+        print("\t", i, ")", setonlist[i])
 
     print("2) Set Off keywords:")
     for i in range(0, noff):
-        print("    ", i, ")", setofflist[i])
+        print("\t", i, ")", setofflist[i])
 #        print("{i}) {}", i, setofflist[i])
 
     print("3) Set Default keywords:")
     for i in range(0, ndef):
-        print("    ", i, ")", setdefaultlist[i])
+        print("\t", i, ")", setdefaultlist[i])
 
 #Main program, do not modify it.
 if __name__ == "__main__":
